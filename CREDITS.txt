@@ -1,0 +1,8 @@
+Credits and permissions
+
+Creature meshes, textures and animations in Savage Requiem World.bsa are by Mihail (open permissions, used with credit) and Bethesda Softworks.
+The creature behaviour, packages, factions, survival foods, herds and the Creature Behaviour SKSE plugin are by CageTV.
+Skyrim Special Edition and its official content are by Bethesda Softworks.
+Requiem (the Roleplaying Overhaul) is by the Requiem team. This package contains no file from it: the Requiem layer of the DLL refers to Requiem's own records by name and only does anything when Requiem.esp is loaded.
+The creature variant meshes the plugin names (bear, wolf and fox coats) come with Savage Skyrim and are not included here.
+SKSE64 and CommonLibSSE-NG (alandtse, GPL-3.0 with a modding exception) are used by the DLL.

@@ -1,0 +1,9338 @@
+{
+ "_comment": "Records live in the plugins; these rules re-apply them at game start if another mod overwrote them. Form refs are 'Plugin.esp|HEXID' (local id).",
+ "ingestible_effects": [
+  {
+   "form": "Savage Requiem World.esp|000E48",
+   "effects": [
+    "Update.esm|002EE1"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|000E49",
+   "effects": [
+    "Update.esm|002EE3"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|000E4A",
+   "effects": [
+    "Update.esm|002EE4"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|000895",
+   "effects": [
+    "Update.esm|002EE2"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|000896",
+   "effects": [
+    "Update.esm|002EE4"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|0008DA",
+   "effects": [
+    "Update.esm|002EE3"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|0010D6",
+   "effects": [
+    "Update.esm|002EE1"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|0010D9",
+   "effects": [
+    "Update.esm|002EE1"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|0010D7",
+   "effects": [
+    "Update.esm|002EE3"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|0013DC",
+   "effects": [
+    "Update.esm|002EE1"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|0013DD",
+   "effects": [
+    "Update.esm|002EE3"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|000D32",
+   "effects": [
+    "Update.esm|002EE1"
+   ]
+  },
+  {
+   "form": "Savage Requiem World.esp|000D33",
+   "effects": [
+    "Update.esm|002EE3"
+   ]
+  }
+ ],
+ "formlist_add": [
+  {
+   "list": "ccQDRSSE001-SurvivalMode.esl|0008B0",
+   "items": [
+    "Savage Requiem World.esp|000E48",
+    "Savage Requiem World.esp|000895",
+    "Savage Requiem World.esp|0010D6",
+    "Savage Requiem World.esp|0010D9",
+    "Savage Requiem World.esp|0013DC",
+    "Savage Requiem World.esp|000D32"
+   ]
+  }
+ ],
+ "weapon_keyword": [
+  {
+   "_comment": "silver weapons hurt undead: WeapMaterialSilver is what SilverPerk checks",
+   "nameContains": [
+    "silver"
+   ],
+   "nameExclude": [
+    "silver-blood",
+    "silverblood",
+    "silver hand",
+    "silver-hand"
+   ],
+   "requireAny": [
+    "Skyrim.esm|01E711",
+    "Skyrim.esm|01E712",
+    "Skyrim.esm|01E713",
+    "Skyrim.esm|01E714",
+    "Skyrim.esm|06D930",
+    "Skyrim.esm|06D931",
+    "Skyrim.esm|06D932"
+   ],
+   "keyword": "Skyrim.esm|10AA1A"
+  },
+  {
+   "_comment": "Dawnguard weapons are silver (same rule as Dawnguard Weapons Are Silver)",
+   "requireAll": [
+    "Dawnguard.esm|00D839"
+   ],
+   "requireAny": [
+    "Skyrim.esm|01E711",
+    "Skyrim.esm|01E712",
+    "Skyrim.esm|01E713",
+    "Skyrim.esm|01E714",
+    "Skyrim.esm|06D930",
+    "Skyrim.esm|06D931",
+    "Skyrim.esm|06D932"
+   ],
+   "keyword": "Skyrim.esm|10AA1A"
+  }
+ ],
+ "player_perks": [
+  "Skyrim.esm|10D685"
+ ],
+ "armor_warmth": [
+  {
+   "_comment": "vanilla Survival default for armor that lost it (Requiem and many mods): heavy/light armor warm, poor clothing cold",
+   "warm": "Update.esm|002ED9",
+   "cold": "Update.esm|002ED8",
+   "warmIfAny": [
+    "Skyrim.esm|06BBD2",
+    "Skyrim.esm|06BBD3"
+   ],
+   "coldIfAny": [
+    "Skyrim.esm|0A865C"
+   ],
+   "slotMask": 4239
+  }
+ ],
+ "package_list_by_race": [
+  {
+   "race": "Skyrim.esm|0B7998",
+   "list": "Savage Requiem World.esp|000F33",
+   "_name": "?"
+  },
+  {
+   "race": "Dawnguard.esm|00D0B2",
+   "list": "Savage Requiem World.esp|000F13",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|0131F4",
+   "list": "Savage Requiem World.esp|000F14",
+   "_name": "?"
+  },
+  {
+   "race": "Dawnguard.esm|00D0B6",
+   "list": "Savage Requiem World.esp|000F17",
+   "_name": "?"
+  },
+  {
+   "race": "Dawnguard.esm|019FD3",
+   "list": "Savage Requiem World.esp|000F33",
+   "_name": "?"
+  },
+  {
+   "race": "Dawnguard.esm|006AFA",
+   "list": "Savage Requiem World.esp|000F33",
+   "_name": "?"
+  },
+  {
+   "race": "Dawnguard.esm|00894D",
+   "list": "Savage Requiem World.esp|000F33",
+   "_name": "?"
+  },
+  {
+   "race": "Dawnguard.esm|0023E2",
+   "list": "Savage Requiem World.esp|000F33",
+   "_name": "?"
+  },
+  {
+   "race": "Dragonborn.esm|027BFC",
+   "list": "Savage Requiem World.esp|000F1A",
+   "_name": "?"
+  },
+  {
+   "race": "Dragonborn.esm|01B637",
+   "list": "Savage Requiem World.esp|000F1C",
+   "_name": "?"
+  },
+  {
+   "race": "Dragonborn.esm|02B014",
+   "list": "Savage Requiem World.esp|000F1F",
+   "_name": "?"
+  },
+  {
+   "race": "Dragonborn.esm|028580",
+   "list": "Savage Requiem World.esp|000F25",
+   "_name": "?"
+  },
+  {
+   "race": "Dragonborn.esm|014449",
+   "list": "Savage Requiem World.esp|000F28",
+   "_name": "?"
+  },
+  {
+   "race": "Dragonborn.esm|01CAD8",
+   "list": "Savage Requiem World.esp|000F19",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|0131EF",
+   "list": "Savage Requiem World.esp|001029",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|000D53",
+   "list": "Savage Requiem World.esp|000F1E",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|0131FB",
+   "list": "Savage Requiem World.esp|000F2E",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|0EB872",
+   "list": "Savage Requiem World.esp|000F33",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|0F3903",
+   "list": "Savage Requiem World.esp|000F18",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|088794",
+   "list": "Savage Requiem World.esp|000FD4",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|013209",
+   "list": "Savage Requiem World.esp|000F39",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|013208",
+   "list": "Savage Requiem World.esp|000F3A",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|0F1182",
+   "list": "Savage Requiem World.esp|000F39",
+   "_name": "?"
+  },
+  {
+   "race": "Skyrim.esm|0131F5",
+   "list": "Savage Requiem World.esp|000F1A",
+   "_name": "AtronachFlameRace"
+  },
+  {
+   "race": "Skyrim.esm|0131F6",
+   "list": "Savage Requiem World.esp|000F1A",
+   "_name": "AtronachFrostRace"
+  },
+  {
+   "race": "Skyrim.esm|0131F7",
+   "list": "Savage Requiem World.esp|000F1A",
+   "_name": "AtronachStormRace"
+  },
+  {
+   "race": "Skyrim.esm|0131E8",
+   "list": "Savage Requiem World.esp|000F29",
+   "_name": "BearBlackRace"
+  },
+  {
+   "race": "Skyrim.esm|0131E7",
+   "list": "Savage Requiem World.esp|000F29",
+   "_name": "BearBrownRace"
+  },
+  {
+   "race": "Skyrim.esm|0131E9",
+   "list": "Savage Requiem World.esp|000F29",
+   "_name": "BearSnowRace"
+  },
+  {
+   "race": "Skyrim.esm|106C10",
+   "list": "Savage Requiem World.esp|000F37",
+   "_name": "C06WolfSpiritRace"
+  },
+  {
+   "race": "Skyrim.esm|0131EB",
+   "list": "Savage Requiem World.esp|000F11",
+   "_name": "ChaurusRace"
+  },
+  {
+   "race": "Skyrim.esm|0A5601",
+   "list": "Savage Requiem World.esp|000F11",
+   "_name": "ChaurusReaperRace"
+  },
+  {
+   "race": "Dawnguard.esm|0051FB",
+   "list": "Savage Requiem World.esp|000F11",
+   "_name": "DLC1ChaurusHunterRace"
+  },
+  {
+   "race": "Dawnguard.esm|00C5F0",
+   "list": "Savage Requiem World.esp|000F12",
+   "_name": "DLC1DeathHoundRace"
+  },
+  {
+   "race": "Dawnguard.esm|00A2C6",
+   "list": "Savage Requiem World.esp|000F15",
+   "_name": "DLC1GargoyleRace"
+  },
+  {
+   "race": "Dawnguard.esm|010D00",
+   "list": "Savage Requiem World.esp|000F15",
+   "_name": "DLC1GargoyleVariantBossRace"
+  },
+  {
+   "race": "Dawnguard.esm|019D86",
+   "list": "Savage Requiem World.esp|000F15",
+   "_name": "DLC1GargoyleVariantGreenRace"
+  },
+  {
+   "race": "Dawnguard.esm|018B33",
+   "list": "Savage Requiem World.esp|000F16",
+   "_name": "DLC1HuskyArmoredRace"
+  },
+  {
+   "race": "Dawnguard.esm|018B36",
+   "list": "Savage Requiem World.esp|000F16",
+   "_name": "DLC1HuskyBareRace"
+  },
+  {
+   "race": "Dragonborn.esm|01B658",
+   "list": "Savage Requiem World.esp|000F1B",
+   "_name": "DLC2AshHopperRace"
+  },
+  {
+   "race": "Dragonborn.esm|024038",
+   "list": "Savage Requiem World.esp|000F1D",
+   "_name": "DLC2BoarRace"
+  },
+  {
+   "race": "Dragonborn.esm|014495",
+   "list": "Savage Requiem World.esp|000F22",
+   "_name": "DLC2LurkerRace"
+  },
+  {
+   "race": "Dragonborn.esm|0179CF",
+   "list": "Savage Requiem World.esp|000F23",
+   "_name": "DLC2MountedRieklingRace"
+  },
+  {
+   "race": "Dragonborn.esm|01FEB8",
+   "list": "Savage Requiem World.esp|000F25",
+   "_name": "DLC2NetchRace"
+  },
+  {
+   "race": "Dragonborn.esm|017F44",
+   "list": "Savage Requiem World.esp|000F23",
+   "_name": "DLC2RieklingRace"
+  },
+  {
+   "race": "Dragonborn.esm|01DCB9",
+   "list": "Savage Requiem World.esp|000F26",
+   "_name": "DLC2SeekerRace"
+  },
+  {
+   "race": "Dragonborn.esm|01B644",
+   "list": "Savage Requiem World.esp|000F18",
+   "_name": "DLC2SprigganBurntRace"
+  },
+  {
+   "race": "Dragonborn.esm|01E17B",
+   "list": "Savage Requiem World.esp|000F27",
+   "_name": "DLC2WerebearBeastRace"
+  },
+  {
+   "race": "Skyrim.esm|0131EE",
+   "list": "Savage Requiem World.esp|000F16",
+   "_name": "DogRace"
+  },
+  {
+   "race": "Skyrim.esm|0131F1",
+   "list": "Savage Requiem World.esp|000F1F",
+   "_name": "DwarvenCenturionRace"
+  },
+  {
+   "race": "Skyrim.esm|0131F2",
+   "list": "Savage Requiem World.esp|000F1F",
+   "_name": "DwarvenSphereRace"
+  },
+  {
+   "race": "Skyrim.esm|0131F3",
+   "list": "Savage Requiem World.esp|00102C",
+   "_name": "DwarvenSpiderRace"
+  },
+  {
+   "race": "Skyrim.esm|109C7C",
+   "list": "Savage Requiem World.esp|000F2C",
+   "_name": "FoxRace"
+  },
+  {
+   "race": "Skyrim.esm|0131F8",
+   "list": "Savage Requiem World.esp|000F28",
+   "_name": "FrostbiteSpiderRace"
+  },
+  {
+   "race": "Skyrim.esm|04E507",
+   "list": "Savage Requiem World.esp|000F28",
+   "_name": "FrostbiteSpiderRaceGiant"
+  },
+  {
+   "race": "Skyrim.esm|053477",
+   "list": "Savage Requiem World.esp|000F28",
+   "_name": "FrostbiteSpiderRaceLarge"
+  },
+  {
+   "race": "Skyrim.esm|0131F9",
+   "list": "Savage Requiem World.esp|000F19",
+   "_name": "GiantRace-Intended"
+  },
+  {
+   "race": "Skyrim.esm|06DC99",
+   "list": "Savage Requiem World.esp|000F2F",
+   "_name": "HareRace"
+  },
+  {
+   "race": "Skyrim.esm|0131FC",
+   "list": "Savage Requiem World.esp|000F20",
+   "_name": "HorkerRace"
+  },
+  {
+   "race": "Skyrim.esm|0131FE",
+   "list": "Savage Requiem World.esp|000F21",
+   "_name": "IceWraithRace"
+  },
+  {
+   "race": "Skyrim.esm|0131FF",
+   "list": "Savage Requiem World.esp|000F31",
+   "_name": "MammothRace"
+  },
+  {
+   "race": "Skyrim.esm|0BA545",
+   "list": "Savage Requiem World.esp|000F24",
+   "_name": "MudcrabRace"
+  },
+  {
+   "race": "Skyrim.esm|013200",
+   "list": "Savage Requiem World.esp|000F17",
+   "_name": "SabreCatRace"
+  },
+  {
+   "race": "Skyrim.esm|013202",
+   "list": "Savage Requiem World.esp|000F17",
+   "_name": "SabreCatSnowyRace"
+  },
+  {
+   "race": "Skyrim.esm|013201",
+   "list": "Savage Requiem World.esp|000F32",
+   "_name": "SkeeverRace"
+  },
+  {
+   "race": "Skyrim.esm|013203",
+   "list": "Savage Requiem World.esp|000F3B",
+   "_name": "SlaughterfishRace"
+  },
+  {
+   "race": "Dawnguard.esm|013B77",
+   "list": "Savage Requiem World.esp|000F18",
+   "_name": "SprigganEarthMotherRace"
+  },
+  {
+   "race": "Skyrim.esm|013204",
+   "list": "Savage Requiem World.esp|000F18",
+   "_name": "SprigganRace"
+  },
+  {
+   "race": "Skyrim.esm|013206",
+   "list": "Savage Requiem World.esp|000F35",
+   "_name": "TrollFrostRace"
+  },
+  {
+   "race": "Skyrim.esm|013205",
+   "list": "Savage Requiem World.esp|000F35",
+   "_name": "TrollRace"
+  },
+  {
+   "race": "Skyrim.esm|0CDD84",
+   "list": "Savage Requiem World.esp|000F27",
+   "_name": "WerewolfBeastRace"
+  },
+  {
+   "race": "Skyrim.esm|01320A",
+   "list": "Savage Requiem World.esp|000F37",
+   "_name": "WolfRace"
+  }
+ ],
+ "ai_by_race": [
+  {
+   "race": "Skyrim.esm|0CF89B",
+   "_name": "Deer",
+   "aggression": 0,
+   "confidence": 0,
+   "assistance": 0
+  },
+  {
+   "race": "Skyrim.esm|0131ED",
+   "_name": "Elk (incl. Megaloceros)",
+   "aggression": 0,
+   "confidence": 0,
+   "assistance": 0
+  },
+  {
+   "race": "Skyrim.esm|0BA545",
+   "_name": "Mudcrab",
+   "aggression": 0,
+   "confidence": 1,
+   "assistance": 0,
+   "aggroRadius": false
+  }
+ ],
+ "leveled_edit": [
+  {
+   "_name": "DLC2LCharAnimalForestPredator",
+   "list": "Dragonborn.esm|01E1C5",
+   "add": [
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CD",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF773",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|57E8F7",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "DLC2LCharAnimalMountainSnowPredator",
+   "list": "Dragonborn.esm|01E1C6",
+   "add": [
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 9,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 13,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABF",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|57E8F8",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAmbientCreatures",
+   "list": "Skyrim.esm|0EC969",
+   "add": [
+    {
+     "form": "Savage Requiem World.esp|0012B6",
+     "level": 1,
+     "count": 3,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00CCCA",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00CCCD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00CCCE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00CCCF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014578",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0196A6",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0196A7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A9",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AB",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0196AE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B1",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B6",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CE",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0238DB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0238DC",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0238DD",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0238DE",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0238DF",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0238E0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0238E1",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0289EB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0289EE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289F3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289F7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289F8",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0289F9",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289FC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289FD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Dragonborn.esm|03284D",
+     "level": 4,
+     "count": 2,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|051269",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|05126A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|06DC9D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|10C46F",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|10C470",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAmbientCreaturesSnow",
+   "list": "Skyrim.esm|0EC96B",
+   "add": [
+    {
+     "form": "Animallica.esp|00CCCA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00CCCD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A9",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0196AA",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0196AE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B1",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196B6",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289EB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0289EF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289F7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289F9",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0289FC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289FD",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|05126A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|10C46B",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|10C46C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|10C46D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|10C46E",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalCanyonPredator",
+   "list": "Skyrim.esm|04229B",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D69",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E4",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E8",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EC",
+     "level": 22,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0012EC",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EC",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AF",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B0",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B1",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B2",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B6",
+     "level": 30,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C1",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D2",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D5",
+     "level": 10,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055D8",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE54",
+     "level": 13,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE62",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEF",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEF",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEF",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEF",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AB5",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023AB7",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023ABA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0289E5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289E8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB01",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB02",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C13",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C15",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2C",
+     "level": 30,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 30,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C36",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 30,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|06B1C5",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF773",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|34338F",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343390",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalCanyonPrey",
+   "list": "Skyrim.esm|04229C",
+   "add": [
+    {
+     "form": "Savage Requiem World.esp|0012B6",
+     "level": 3,
+     "count": 2,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DBD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DBE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE62",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00F46F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F470",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "SkyTEST-RealisticAnimals&Predators.esp|0112BD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "SkyTEST-RealisticAnimals&Predators.esp|0112BE",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Dragonborn.esm|03284D",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C10",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|037D25",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|037D27",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|03CE49",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126E",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|05126F",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|051270",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|34338C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|3482D4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|7B8C55",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|7B8C58",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|7CD0D2",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalCoastSnowPredator",
+   "list": "Skyrim.esm|0422A3",
+   "add": [
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D78",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 9,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AD",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028AD",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AD",
+     "level": 12,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028B4",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028B5",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028B6",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B7",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C1",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A520",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CB",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023A8C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AB6",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023ABB",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023ABF",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|02DB01",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB02",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB03",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1F",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 11,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343392",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343394",
+     "level": 1,
+     "count": 1,
+     "times": 5
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalForest",
+   "list": "Skyrim.esm|01E790",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D71",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|00128F",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0012B6",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Savage Requiem World.esp|0012C2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0012C2",
+     "level": 4,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0012E3",
+     "level": 7,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E7",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013AD",
+     "level": 1,
+     "count": 10,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001854",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A520",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE62",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014576",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014578",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8A",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023AB5",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023AB7",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Skyrim.esm|023ABA",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 11
+    },
+    {
+     "form": "Animallica.esp|0289EE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289EF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Dragonborn.esm|03284D",
+     "level": 5,
+     "count": 2,
+     "times": 1
+    },
+    {
+     "form": "Dragonborn.esm|03284D",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C13",
+     "level": 7,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C20",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|04517D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748B",
+     "level": 28,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C38",
+     "level": 15,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C38",
+     "level": 18,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343385",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343386",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": [],
+   "flags_set": 3
+  },
+  {
+   "_name": "LCharAnimalForestPredator",
+   "list": "Skyrim.esm|042297",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D69",
+     "level": 38,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D69",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6E",
+     "level": 45,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|000D71",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D71",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D72",
+     "level": 27,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D72",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D73",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D73",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D77",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D77",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D78",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7D",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7D",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E3",
+     "level": 3,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E3",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E4",
+     "level": 18,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E7",
+     "level": 3,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E7",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E8",
+     "level": 26,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 4,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EC",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CB",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CE",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001854",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AD",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AE",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028AF",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B0",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B1",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B2",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B3",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B3",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B6",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B7",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B7",
+     "level": 45,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C1",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00A520",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0196A3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0196AD",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEED",
+     "level": 50,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEED",
+     "level": 60,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CB",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|01E7CC",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|01E7CD",
+     "level": 20,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023A8A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0289E5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289E8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289EE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289EF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB01",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB02",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB03",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|032C13",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C14",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C15",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1D",
+     "level": 25,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1F",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C20",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C21",
+     "level": 25,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2C",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|041FB4",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748B",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748B",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748B",
+     "level": 30,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748B",
+     "level": 35,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748B",
+     "level": 40,
+     "count": 1,
+     "times": 6
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748B",
+     "level": 45,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C37",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C37",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C38",
+     "level": 13,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C38",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|059C38",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF773",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|34338F",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343390",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalForestPrey",
+   "list": "Skyrim.esm|042298",
+   "add": [
+    {
+     "form": "Animallica.esp|002339",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233A",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00233B",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00233C",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00233D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E22",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00CCC0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F46E",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00F46F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F470",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014576",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|014577",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014578",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|01457D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01457E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7BE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7BF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C1",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB0A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB0B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|037D23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|037D25",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|037D27",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE49",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE4A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4B",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE4C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE4E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE51",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE52",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE53",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE56",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|05126C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|051270",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalForestSnowPredator",
+   "list": "Skyrim.esm|042299",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 18,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 19,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D69",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D69",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 12,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6E",
+     "level": 45,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|000D71",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D72",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D73",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7D",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EC",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CB",
+     "level": 11,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CB",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AB",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 7,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028AD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AD",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AF",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B0",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B1",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B2",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028B4",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B5",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B6",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B7",
+     "level": 45,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A520",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE54",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A3",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0196A4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 60,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|01E7CB",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|01E7CC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CD",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8C",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023AAC",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023AB3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AB6",
+     "level": 1,
+     "count": 1,
+     "times": 6
+    },
+    {
+     "form": "Skyrim.esm|023ABB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|02DB01",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB02",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|02DB03",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C14",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1F",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|04203F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 11,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalHills",
+   "list": "Skyrim.esm|01E78F",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D77",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E3",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EC",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EC",
+     "level": 34,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 3,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 33,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|00134D",
+     "level": 1,
+     "count": 10,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CA",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 6,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C1",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D9",
+     "level": 25,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055DA",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE54",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE54",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE54",
+     "level": 40,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE62",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0196AD",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8A",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Skyrim.esm|023A8B",
+     "level": 1,
+     "count": 1,
+     "times": 6
+    },
+    {
+     "form": "Skyrim.esm|023AB5",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 5
+    },
+    {
+     "form": "Animallica.esp|0289E5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB0A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|083DFE",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|083DFE",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|083DFE",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|083E00",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|083E00",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF773",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343386",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|6E37D8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|6E37D9",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|6E37D9",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|6E37DA",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalMarshPredator",
+   "list": "Skyrim.esm|042295",
+   "add": [
+    {
+     "form": "Animallica.esp|000D72",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D73",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D77",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D78",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E3",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0012E4",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CE",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CE",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CF",
+     "level": 13,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CF",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013D2",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013D3",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013D3",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AF",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B7",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Dawnguard.esm|005204",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C1",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D9",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF0",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF0",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF0",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF0",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF0",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8F",
+     "level": 1,
+     "count": 1,
+     "times": 5
+    },
+    {
+     "form": "Skyrim.esm|023AAA",
+     "level": 1,
+     "count": 1,
+     "times": 7
+    },
+    {
+     "form": "Skyrim.esm|023ABA",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Skyrim.esm|023ABC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289E5",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|032C13",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C14",
+     "level": 25,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|032C15",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C20",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C21",
+     "level": 25,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2C",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|041FB4",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|04517D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 12,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 14,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748A",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05749B",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|0A5600",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343388",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343389",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalMarshPrey",
+   "list": "Skyrim.esm|042296",
+   "add": [
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E1E",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|002E1F",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|002E22",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F46E",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|014576",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014577",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|014578",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|01457D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7BF",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|01E7C0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB0C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE4E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE54",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE55",
+     "level": 1,
+     "count": 1,
+     "times": 7
+    },
+    {
+     "form": "Animallica.esp|03CE56",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalMountainSnowPredator",
+   "list": "Skyrim.esm|04229D",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D69",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6E",
+     "level": 44,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D71",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D72",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D73",
+     "level": 44,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D77",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7D",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 9,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 24,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 35,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 12,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028B1",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B2",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B4",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B4",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B7",
+     "level": 45,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C1",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A520",
+     "level": 1,
+     "count": 1,
+     "times": 5
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A3",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0196A4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|01E7CB",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CD",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8C",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023AB3",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023AB6",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023ABB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023ABF",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1F",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 3,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 9,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343392",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343394",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|57E8F8",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|57E8F8",
+     "level": 7,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|57E8F8",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalMountainSnowPrey",
+   "list": "Skyrim.esm|0422A2",
+   "add": [
+    {
+     "form": "Animallica.esp|001DBD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DBE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002339",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|00233A",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00233B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00CCC0",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00F46F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F470",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "SkyTEST-RealisticAnimals&Predators.esp|0112BD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "SkyTEST-RealisticAnimals&Predators.esp|0112BE",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|01E7BF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C0",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|02EBE2",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|032C10",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|037D23",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|037D25",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|037D27",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE49",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|03CE51",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE52",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE53",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE54",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|05126E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|051270",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|6E35BB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalPlains",
+   "list": "Skyrim.esm|01E78D",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D72",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7D",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0012B6",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Savage Requiem World.esp|0012C6",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|0012E4",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|001341",
+     "level": 1,
+     "count": 10,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DBD",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 12,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E1F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E22",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C9",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055CB",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055CC",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055D2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D2",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D3",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D4",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D5",
+     "level": 7,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055D6",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D7",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055D8",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D9",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055DA",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE62",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014576",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014577",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014578",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01457D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0196AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AD",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF1",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF1",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AB5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 7
+    },
+    {
+     "form": "Dragonborn.esm|03284D",
+     "level": 8,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|032C1C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|068D07",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|068D5B",
+     "level": 15,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|068D6B",
+     "level": 15,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|068D6D",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|068D6E",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343385",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343386",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": [],
+   "flags_set": 3
+  },
+  {
+   "_name": "LCharAnimalPlainsPredator",
+   "list": "Skyrim.esm|042293",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012F0",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013C8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AF",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B2",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C7",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0055C8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C9",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055CA",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|0055CB",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055CC",
+     "level": 35,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055D2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D3",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D4",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055D5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D5",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D6",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D6",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D7",
+     "level": 40,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|0055D8",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D9",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055DA",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE62",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AB",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0196AD",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF1",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF1",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF1",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEF1",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A8B",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023AB5",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|023ABA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB01",
+     "level": 10,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|02DB02",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB03",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1C",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|032C1D",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1F",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 8,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2C",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057489",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057489",
+     "level": 6,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057489",
+     "level": 18,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 18,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 28,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057495",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 18,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 28,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 40,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057496",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF773",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|34338F",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343390",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalPlainsPrey",
+   "list": "Skyrim.esm|042294",
+   "add": [
+    {
+     "form": "Animallica.esp|001DBD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|002339",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233A",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00233B",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00233C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|002E1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E1F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E22",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00CCC0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F46E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F46F",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00F470",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|014576",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|014577",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|014578",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01457D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01457E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7BE",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|01E7BF",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|01E7C0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C1",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|01E7C2",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|02DB0A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB0B",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|02DB0C",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|037D23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE49",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|03CE4B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4E",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE4F",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|03CE50",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE51",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE52",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|03CE53",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE54",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE56",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|05126B",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|05126C",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|05126D",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|05126E",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|05126F",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|051270",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAnimalSnowFields",
+   "list": "Skyrim.esm|01E78E",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D68",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D69",
+     "level": 44,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6D",
+     "level": 25,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|000D6E",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D71",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D72",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D73",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7C",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013AE",
+     "level": 1,
+     "count": 10,
+     "times": 1
+    },
+    {
+     "form": "Savage Requiem World.esp|0013CC",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DBD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DC8",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 25,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|001DCA",
+     "level": 45,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 12,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AD",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0028B1",
+     "level": 18,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B2",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028B4",
+     "level": 20,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Animallica.esp|0028B5",
+     "level": 45,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028B6",
+     "level": 30,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0028B7",
+     "level": 45,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C1",
+     "level": 30,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A520",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|01BEEE",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CB",
+     "level": 20,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023A8C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AB3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AB6",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Skyrim.esm|023ABF",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0289E8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289EE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289EF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|032C1F",
+     "level": 25,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|05748F",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057492",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057493",
+     "level": 11,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 28,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 40,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057494",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343392",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343394",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharAtronach",
+   "list": "Skyrim.esm|01E77A",
+   "add": [
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE52",
+     "level": 30,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023AA6",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim.esm|023AA7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AA7",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AA8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023AA8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0667A6",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0667A6",
+     "level": 60,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|14CA8E",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharBearPlainsForestHills",
+   "list": "Skyrim.esm|01E796",
+   "add": [
+    {
+     "form": "Animallica.esp|0028AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0028AC",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057497",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|057497",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharDwarvenAutomaton",
+   "list": "Skyrim.esm|01E783",
+   "add": [
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7C4",
+     "level": 48,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7C5",
+     "level": 58,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7C6",
+     "level": 68,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7C7",
+     "level": 48,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7C8",
+     "level": 58,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7C9",
+     "level": 68,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7CE",
+     "level": 68,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7CF",
+     "level": 68,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D0",
+     "level": 48,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D1",
+     "level": 58,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D2",
+     "level": 48,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D3",
+     "level": 58,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D4",
+     "level": 44,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D5",
+     "level": 54,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D6",
+     "level": 54,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D7",
+     "level": 44,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D8",
+     "level": 64,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7D9",
+     "level": 64,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7DA",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7DB",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7DC",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7DD",
+     "level": 42,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7DE",
+     "level": 42,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7DF",
+     "level": 42,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7E0",
+     "level": 52,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7E1",
+     "level": 52,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00A7E2",
+     "level": 52,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A96",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A97",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023A98",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Dragonborn.esm|033253",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|034CCF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|034CD0",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|034CD1",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|034CD2",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|034CD3",
+     "level": 48,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|034CD4",
+     "level": 64,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|034CD4",
+     "level": 68,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BA7E3",
+     "level": 26,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BA7E4",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BA7E5",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BA7E8",
+     "level": 38,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BA7EB",
+     "level": 38,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF777",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF778",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0BF779",
+     "level": 22,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0FD6B7",
+     "level": 38,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0FD6BA",
+     "level": 38,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0FFE57",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0FFE58",
+     "level": 26,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0FFE59",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|10EC86",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|10EC87",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|10EC89",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|10EC8E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|502AF6",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|502AF7",
+     "level": 16,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|502AF8",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|502AF9",
+     "level": 32,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|502AFA",
+     "level": 52,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|502AFB",
+     "level": 64,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|502AFB",
+     "level": 68,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharElk",
+   "list": "Skyrim.esm|0DB2AC",
+   "add": [
+    {
+     "form": "Animallica.esp|00233A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00233D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E22",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|002E23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F46E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F46F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00F470",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01457D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7BE",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7BF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C1",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7C2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|037D23",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|037D25",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|037D27",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4A",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE4F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE51",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE52",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE53",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE54",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE56",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0B0947",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|0B0948",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|7F07FD",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharFrostbiteSpider",
+   "list": "Skyrim.esm|01E77C",
+   "add": [
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00F7EA",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00F7EB",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00F7EC",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00F7ED",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0289E5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|1793D3",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|1793D4",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB87A",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB87B",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB87C",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB87D",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB87E",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB87F",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB880",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB881",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB882",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB883",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB884",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB885",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB88A",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB88B",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB88C",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB88F",
+     "level": 14,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB890",
+     "level": 50,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|5EB891",
+     "level": 70,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharMudcrab",
+   "list": "Skyrim.esm|02183E",
+   "add": [
+    {
+     "form": "Skyrim.esm|021875",
+     "level": 20,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Skyrim.esm|0E4010",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|0E4010",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|0E4010",
+     "level": 20,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|0E4011",
+     "level": 15,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|54A8A8",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|54A8A9",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|54A8A9",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|54A8AA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|54A8AA",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": [
+    {
+     "form": "Skyrim.esm|021875",
+     "level": 10,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|021875",
+     "level": 15,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|0E4011",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|0E4011",
+     "level": 5,
+     "count": 1,
+     "times": 1
+    }
+   ]
+  },
+  {
+   "_name": "LCharSabrecat",
+   "list": "Skyrim.esm|0FE2D5",
+   "add": [
+    {
+     "form": "Animallica.esp|000D67",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D6C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D71",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D76",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|000D7B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012E7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0012EF",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055C0",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D2",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055D8",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|01E7CC",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|02DB01",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|03CE2B",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|083DFE",
+     "level": 11,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|083E00",
+     "level": 17,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|479EB4",
+     "level": 11,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|479EB5",
+     "level": 17,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "LCharWolf",
+   "list": "Skyrim.esm|0B83C2",
+   "add": [
+    {
+     "form": "Animallica.esp|0055C7",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0055CA",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51E",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A51F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A520",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A521",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A522",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|00A523",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim Immersive Creatures Special Edition.esp|00CE62",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Animallica.esp|0196A3",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196A5",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Animallica.esp|0196AB",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABC",
+     "level": 6,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Skyrim.esm|023ABE",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Skyrim.esm|10FE05",
+     "level": 1,
+     "count": 1,
+     "times": 2
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|34338F",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "ccBGSSSE037-Curios.esl|343390",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalCanyonPredator",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|04229B",
+   "add": [
+    {
+     "form": "Requiem.esp|34338F",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Requiem.esp|343390",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalCanyonPrey",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|04229C",
+   "add": [
+    {
+     "form": "Requiem.esp|34338C",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Requiem.esp|3482D4",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalCoastSnowPredator",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|0422A3",
+   "add": [
+    {
+     "form": "Requiem.esp|343392",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    },
+    {
+     "form": "Requiem.esp|343394",
+     "level": 1,
+     "count": 1,
+     "times": 5
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalForest",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|01E790",
+   "add": [
+    {
+     "form": "Requiem.esp|04517D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Requiem.esp|343385",
+     "level": 1,
+     "count": 4,
+     "times": 1
+    },
+    {
+     "form": "Requiem.esp|343386",
+     "level": 1,
+     "count": 3,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalForestPredator",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|042297",
+   "add": [
+    {
+     "form": "Requiem.esp|34338F",
+     "level": 1,
+     "count": 4,
+     "times": 4
+    },
+    {
+     "form": "Requiem.esp|343390",
+     "level": 1,
+     "count": 4,
+     "times": 4
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalHills",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|01E78F",
+   "add": [
+    {
+     "form": "Requiem.esp|343386",
+     "level": 1,
+     "count": 3,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalMarshPredator",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|042295",
+   "add": [
+    {
+     "form": "Requiem.esp|04517D",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Requiem.esp|343388",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    },
+    {
+     "form": "Requiem.esp|343389",
+     "level": 1,
+     "count": 1,
+     "times": 3
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalMountainSnowPredator",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|04229D",
+   "add": [
+    {
+     "form": "Requiem.esp|343392",
+     "level": 1,
+     "count": 1,
+     "times": 1
+    },
+    {
+     "form": "Requiem.esp|343394",
+     "level": 1,
+     "count": 1,
+     "times": 4
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalPlains",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|01E78D",
+   "add": [
+    {
+     "form": "Requiem.esp|343385",
+     "level": 1,
+     "count": 3,
+     "times": 1
+    },
+    {
+     "form": "Requiem.esp|343386",
+     "level": 1,
+     "count": 3,
+     "times": 1
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalPlainsPredator",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|042293",
+   "add": [
+    {
+     "form": "Requiem.esp|34338F",
+     "level": 1,
+     "count": 3,
+     "times": 4
+    },
+    {
+     "form": "Requiem.esp|343390",
+     "level": 1,
+     "count": 3,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharAnimalSnowFields",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|01E78E",
+   "add": [
+    {
+     "form": "Requiem.esp|343392",
+     "level": 1,
+     "count": 3,
+     "times": 2
+    },
+    {
+     "form": "Requiem.esp|343394",
+     "level": 1,
+     "count": 3,
+     "times": 2
+    }
+   ],
+   "remove": []
+  },
+  {
+   "_name": "Requiem: LCharWolf",
+   "requires": "Requiem.esp",
+   "list": "Skyrim.esm|0B83C2",
+   "add": [
+    {
+     "form": "Requiem.esp|34338F",
+     "level": 1,
+     "count": 3,
+     "times": 1
+    },
+    {
+     "form": "Requiem.esp|343390",
+     "level": 1,
+     "count": 3,
+     "times": 1
+    }
+   ],
+   "remove": []
+  }
+ ],
+ "keyword_add": [
+  {
+   "_name": "REQ_NoLifeDrainAllowed",
+   "requires": "Requiem.esp",
+   "forms": [
+    "Skyrim.esm|0131F1"
+   ],
+   "keywords": [
+    "Requiem.esp|2EA062"
+   ]
+  },
+  {
+   "_name": "REQ_ActorTypeDaedraNoFlesh",
+   "requires": "Requiem.esp",
+   "forms": [
+    "Skyrim.esm|0131F5",
+    "Skyrim.esm|0131F6",
+    "Skyrim.esm|0131F7"
+   ],
+   "keywords": [
+    "Requiem.esp|44BE5E"
+   ]
+  },
+  {
+   "_name": "REQ_SneakAttackImmunity",
+   "requires": "Requiem.esp",
+   "forms": [
+    "Skyrim.esm|0131F5",
+    "Skyrim.esm|0131F6",
+    "Skyrim.esm|0131F7",
+    "Skyrim.esm|106C10",
+    "Dawnguard.esm|003D02",
+    "Dawnguard.esm|00C5F0",
+    "Dawnguard.esm|0117DE",
+    "Dragonborn.esm|02A6FD",
+    "Dragonborn.esm|01B644",
+    "Skyrim.esm|0131F1",
+    "Skyrim.esm|0131F2",
+    "Skyrim.esm|0131F3",
+    "Skyrim.esm|0131FE",
+    "Skyrim.esm|0F905F",
+    "Dawnguard.esm|013B77",
+    "Skyrim.esm|013204",
+    "Skyrim.esm|1052A3"
+   ],
+   "keywords": [
+    "Requiem.esp|4F6D1E"
+   ]
+  },
+  {
+   "_name": "REQ_DropsBloodKeyword",
+   "requires": "Requiem.esp",
+   "forms": [
+    "Skyrim.esm|0131E8",
+    "Skyrim.esm|0131E7",
+    "Skyrim.esm|0131E9",
+    "Skyrim.esm|0CAE13",
+    "Skyrim.esm|0A919D",
+    "Skyrim.esm|04E785",
+    "Skyrim.esm|0CD657",
+    "Dawnguard.esm|003D01",
+    "Dawnguard.esm|018B33",
+    "Dawnguard.esm|0122B7",
+    "Dawnguard.esm|018B36",
+    "Dawnguard.esm|0117F4",
+    "Dawnguard.esm|0117F5",
+    "Dragonborn.esm|024038",
+    "Dragonborn.esm|0179CF",
+    "Dragonborn.esm|017F44",
+    "Skyrim.esm|0CF89B",
+    "Skyrim.esm|0F1AC4",
+    "Skyrim.esm|0131EE",
+    "Skyrim.esm|0131ED",
+    "Skyrim.esm|109C7C",
+    "Skyrim.esm|0131F9",
+    "Skyrim.esm|06FC4A",
+    "Skyrim.esm|0131FA",
+    "Skyrim.esm|06DC99",
+    "Skyrim.esm|0131FC",
+    "Skyrim.esm|0131FD",
+    "Skyrim.esm|0131FF",
+    "Skyrim.esm|013200",
+    "Skyrim.esm|013202",
+    "Skyrim.esm|013201",
+    "Skyrim.esm|0C3EDF",
+    "Skyrim.esm|013203",
+    "Skyrim.esm|013206",
+    "Skyrim.esm|013205",
+    "Skyrim.esm|0CDD84",
+    "Skyrim.esm|01320A"
+   ],
+   "keywords": [
+    "Requiem.esp|586728"
+   ]
+  },
+  {
+   "_name": "REQ_MinorKnockdownImmunity",
+   "requires": "Requiem.esp",
+   "forms": [
+    "Skyrim.esm|0E7713",
+    "Skyrim.esm|0131F5",
+    "Skyrim.esm|0131F6",
+    "Skyrim.esm|0131F7",
+    "Skyrim.esm|0131E8",
+    "Skyrim.esm|0131E7",
+    "Skyrim.esm|0131E9",
+    "Skyrim.esm|0CAE13",
+    "Dawnguard.esm|00A2C6",
+    "Dawnguard.esm|010D00",
+    "Dawnguard.esm|019D86",
+    "Dawnguard.esm|0117F4",
+    "Dawnguard.esm|0117F5",
+    "Dawnguard.esm|00283A",
+    "Dragonborn.esm|014495",
+    "Dragonborn.esm|01DCB9",
+    "Dragonborn.esm|01B644",
+    "Skyrim.esm|0131F1",
+    "Skyrim.esm|04E507",
+    "Skyrim.esm|053477",
+    "Skyrim.esm|0131F9",
+    "Skyrim.esm|0131FC",
+    "Skyrim.esm|013206",
+    "Skyrim.esm|013205",
+    "Skyrim.esm|0CDD84"
+   ],
+   "keywords": [
+    "Requiem.esp|5F367F"
+   ]
+  },
+  {
+   "_name": "REQ_Spriggan",
+   "requires": "Requiem.esp",
+   "forms": [
+    "Dawnguard.esm|013B77",
+    "Skyrim.esm|013204"
+   ],
+   "keywords": [
+    "Requiem.esp|AD3905"
+   ]
+  }
+ ],
+ "race_spell_add": [
+  {
+   "_name": "REQ_DEPRECATED_Trait_WeaknessFire25",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|0131F8",
+    "Skyrim.esm|04E507",
+    "Skyrim.esm|053477"
+   ],
+   "spells": [
+    "Requiem.esp|03281A"
+   ]
+  },
+  {
+   "_name": "REQ_DEPRECATED_Trait_ResistPoison60",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|0CAE13",
+    "Skyrim.esm|012E82",
+    "Skyrim.esm|0131F8",
+    "Skyrim.esm|04E507",
+    "Skyrim.esm|053477",
+    "Skyrim.esm|0131F9",
+    "Skyrim.esm|0131FF"
+   ],
+   "spells": [
+    "Requiem.esp|0405CC"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Dragon_FearAura",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|012E82"
+   ],
+   "spells": [
+    "Requiem.esp|04516C"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_ResistPoison100",
+   "requires": "Requiem.esp",
+   "races": [
+    "Dawnguard.esm|0117DE",
+    "Skyrim.esm|1052A3"
+   ],
+   "spells": [
+    "Requiem.esp|047294"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Horse_SlowerHorses",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|0131FD"
+   ],
+   "spells": [
+    "Requiem.esp|0CB37E"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Alduin_ShoutBonus",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|0E7713"
+   ],
+   "spells": [
+    "Requiem.esp|0E6736"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Resist_Alduin",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|0E7713"
+   ],
+   "spells": [
+    "Requiem.esp|0EB6BD"
+   ]
+  },
+  {
+   "_name": "REQ_DEPRECATED_Trait_ResistPoison80",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|0E7713"
+   ],
+   "spells": [
+    "Requiem.esp|21E85D"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_NoHealthRegeneration",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|0131FD"
+   ],
+   "spells": [
+    "Requiem.esp|609AF0"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Slaughterfish_DamageOutsideWater",
+   "requires": "Requiem.esp",
+   "races": [
+    "Skyrim.esm|013203"
+   ],
+   "spells": [
+    "Requiem.esp|665466"
+   ]
+  }
+ ],
+ "npc_spell_add": [
+  {
+   "_name": "REQ_Trait_UnarmedDamage_HorseCrusher",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|0640B5",
+    "Skyrim.esm|023ABE"
+   ],
+   "spells": [
+    "Requiem.esp|02291D"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_Draugr_Armored",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|03B548",
+    "Skyrim.esm|04247B",
+    "Skyrim.esm|03B549",
+    "Skyrim.esm|04247C",
+    "Skyrim.esm|03B54A",
+    "Skyrim.esm|04247D"
+   ],
+   "spells": [
+    "Requiem.esp|03280E"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_Draugr_Elite",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|03B54B",
+    "Skyrim.esm|04247E",
+    "Skyrim.esm|04247F",
+    "Skyrim.esm|044C5B"
+   ],
+   "spells": [
+    "Requiem.esp|03280F"
+   ]
+  },
+  {
+   "_name": "RFTI_All_BaseAttackSpeed",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|023A8C",
+    "Skyrim.esm|023A8F",
+    "Skyrim.esm|0A91A0",
+    "Skyrim.esm|02025B",
+    "Skyrim.esm|02025C",
+    "Skyrim.esm|021875"
+   ],
+   "spells": [
+    "Requiem.esp|03E556"
+   ]
+  },
+  {
+   "_name": "REQ_DEPRECATED_Trait_ResistPoison60",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|0640B5"
+   ],
+   "spells": [
+    "Requiem.esp|0405CC"
+   ]
+  },
+  {
+   "_name": "RFTI_All_ExhaustionController",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|023A8C",
+    "Skyrim.esm|023A8F",
+    "Skyrim.esm|0A91A0",
+    "Skyrim.esm|02025B",
+    "Skyrim.esm|02025C",
+    "Skyrim.esm|021875"
+   ],
+   "spells": [
+    "Requiem.esp|062275"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Tempering_Bandit_Heavy_Rank2",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dragonborn.esm|03D2D9",
+    "Dragonborn.esm|03D2DA",
+    "Dragonborn.esm|03D220"
+   ],
+   "spells": [
+    "Requiem.esp|93369B"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Tempering_Bandit_Heavy_Rank3",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dragonborn.esm|03D221"
+   ],
+   "spells": [
+    "Requiem.esp|93369D"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Tempering_Bandit_Heavy_Rank4",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dragonborn.esm|03D21F"
+   ],
+   "spells": [
+    "Requiem.esp|93369F"
+   ]
+  },
+  {
+   "_name": "RFTI_NPC_PersistentSpellRescaling",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|023A8C",
+    "Skyrim.esm|023A8F",
+    "Skyrim.esm|0A91A0",
+    "Skyrim.esm|02025B",
+    "Skyrim.esm|02025C",
+    "Skyrim.esm|021875"
+   ],
+   "spells": [
+    "Requiem.esp|AD3977"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_Bear",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|023A8C"
+   ],
+   "spells": [
+    "Requiem.esp|AD39E4"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_Chaurus",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|023A8F"
+   ],
+   "spells": [
+    "Requiem.esp|AD39E7"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_Mudcrab_Giant",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|021875"
+   ],
+   "spells": [
+    "Requiem.esp|AD39ED"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_Mudcrab_Large",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|0E4011"
+   ],
+   "spells": [
+    "Requiem.esp|AD39EE"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_Mudcrab_Medium",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|0E4010"
+   ],
+   "spells": [
+    "Requiem.esp|AD39EF"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Armor_DragonPriest",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|02025B",
+    "Skyrim.esm|02025C"
+   ],
+   "spells": [
+    "Requiem.esp|AD3A64"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_Falmer_DerivedAttributes",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|03B54F"
+   ],
+   "spells": [
+    "Requiem.esp|AD3B0F"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_ResistMagic30",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|023A93",
+    "Skyrim.esm|02025A",
+    "Skyrim.esm|02025B",
+    "Skyrim.esm|02025C"
+   ],
+   "spells": [
+    "Requiem.esp|ADDDC7"
+   ]
+  }
+ ],
+ "npc_perk_add": [
+  {
+   "_name": "RFTI_Trait_Ghost",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dawnguard.esm|01A73E",
+    "Dawnguard.esm|0071AF",
+    "Dawnguard.esm|00BF5C",
+    "Skyrim.esm|0EB876",
+    "Skyrim.esm|0F5BBB",
+    "Skyrim.esm|0EB870",
+    "Skyrim.esm|0F5BB9",
+    "Skyrim.esm|0EBA05",
+    "Skyrim.esm|0F5BBA",
+    "Skyrim.esm|0E7EA9",
+    "Skyrim.esm|0E662D"
+   ],
+   "perks": [
+    "Requiem.esp|031284"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_ArmorPenetration75",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dawnguard.esm|00E25A",
+    "Skyrim.esm|10F9B9",
+    "Skyrim.esm|10E753",
+    "Skyrim.esm|023A96",
+    "Skyrim.esm|023AAB",
+    "Skyrim.esm|02A1DC",
+    "Skyrim.esm|023AAD",
+    "Skyrim.esm|023AAE",
+    "Skyrim.esm|030437",
+    "Skyrim.esm|030438"
+   ],
+   "perks": [
+    "Requiem.esp|03DFD0"
+   ]
+  },
+  {
+   "_name": "REQ_OneHanded_MartialArts",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dragonborn.esm|03D2D9",
+    "Dragonborn.esm|03D2DA",
+    "Dragonborn.esm|03D21F",
+    "Dragonborn.esm|03D220",
+    "Dragonborn.esm|03D221"
+   ],
+   "perks": [
+    "Requiem.esp|0AD7A3"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_ArmorPenetration25",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dawnguard.esm|003C67",
+    "Skyrim.esm|023A8A",
+    "Skyrim.esm|023A8B",
+    "Skyrim.esm|023A8C",
+    "Skyrim.esm|0C96C2",
+    "Skyrim.esm|023A97",
+    "Skyrim.esm|041FB4",
+    "Skyrim.esm|04203F",
+    "Skyrim.esm|021875",
+    "Skyrim.esm|023AB5",
+    "Skyrim.esm|023AB6",
+    "Skyrim.esm|023ABA",
+    "Skyrim.esm|023ABB",
+    "Skyrim.esm|0B70F7",
+    "Skyrim.esm|0E7EA9"
+   ],
+   "perks": [
+    "Requiem.esp|0FAB0A"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_ArmorPenetration50",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dawnguard.esm|00A2CC",
+    "Dawnguard.esm|014487",
+    "Dawnguard.esm|017702",
+    "Skyrim.esm|0DD641",
+    "Skyrim.esm|101581",
+    "Skyrim.esm|023AB4",
+    "Skyrim.esm|101580"
+   ],
+   "perks": [
+    "Requiem.esp|0FAB0B"
+   ]
+  },
+  {
+   "_name": "REQ_TwoHanded_MightyStrike",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dawnguard.esm|01A73E",
+    "Dawnguard.esm|0150AE",
+    "Dawnguard.esm|0150AF",
+    "Dawnguard.esm|0071AA",
+    "Dawnguard.esm|00BF5E",
+    "Dawnguard.esm|0071AD",
+    "Dawnguard.esm|004575"
+   ],
+   "perks": [
+    "Requiem.esp|182F9B"
+   ]
+  },
+  {
+   "_name": "REQ_Conjuration_CognitiveFlexibility1",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Dawnguard.esm|017E92",
+    "Skyrim.esm|023A93",
+    "Skyrim.esm|02025A",
+    "Skyrim.esm|02025B",
+    "Skyrim.esm|02025C"
+   ],
+   "perks": [
+    "Requiem.esp|185736"
+   ]
+  },
+  {
+   "_name": "REQ_Trait_ArmorPenetration15_TwoHanded",
+   "requires": "Requiem.esp",
+   "npcs": [
+    "Skyrim.esm|03B54F"
+   ],
+   "perks": [
+    "Requiem.esp|18A671"
+   ]
+  }
+ ]
+}
